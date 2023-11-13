@@ -1,0 +1,134 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image:url(images/dark.jpg);
+}
+header{
+    padding: 10px 100px;
+    box-sizing: border-box;
+}
+section{
+    width:100%;
+    height: 100vh;
+}
+section.sec1{
+    background: url(images/ironman.png);
+    
+    width:100%;
+    display: flex;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+section.sec1:hover{
+    background-position: 0px;
+    transform: scale(1.172);
+}
+section.sec2{
+    padding:100px;
+    box-sizing: border-box;
+    height:auto;
+}
+section.sec2 h2{
+    font-size: 3em;
+    margin:0;
+    padding:0 0  20px;
+    color:#fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+section.sec2 p{
+    font-size: 1.4em;
+    margin:0;
+    padding:0;
+    color:#fff;
+    text-align: center;
+}
+section.sec2 p b{
+    color:chartreuse;
+}
+section.sec2 p i{
+    color:skyblue;
+}
+section.sec3{
+    background-image: url(images/cap.png),url(images/thor.png);
+    background-position: left,right;
+    width:100%;
+    display: flex;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 2s;
+    transform: scale(0.9);
+}
+section.sec3:hover{
+    background-position: right,left;
+    transform: scale(1.172);
+}
+nav{
+    width:100%;
+    height: 50px;
+    background: rgba(0,0,0,0.8);
+    border-top:rgba(255,255,255,0.2);
+    border-bottom:rgba(255,255,255,0.2);
+    position: sticky;
+    top:0px;
+    z-index: 1;
+}
+nav ul{
+    display:flex;
+    margin:0;
+    padding:0 100px;
+    float:right; 
+}
+nav ul li{
+    list-style:none;
+}
+nav ul li a{
+    display: block;
+    color:#fff;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height:50px;
+    transition: 1s;
+}
+nav ul li a.active{
+    background-color: royalblue;
+}
+nav ul li a:hover{
+    background-color: greenyellow;
+}
+footer{
+    height: 50px;
+    width:100%;
+    justify-content: center;
+    background-color: black;
+    position: sticky;
+    bottom: 0;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+
+footer a{
+    text-decoration: none;
+    color:white;
+    transition: 1s;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+footer a:hover{
+    background-color: honeydew;
+    color: black;
+    text-decoration: none;
+}
+footer a:active{
+    color: tomato;
+    transform: scale(0.9);
+}

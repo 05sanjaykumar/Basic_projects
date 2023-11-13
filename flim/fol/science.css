@@ -1,0 +1,196 @@
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+    
+    
+}
+
+.intro{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    height: 170px;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(9, 241, 133) , rgb(7, 85, 158));
+   
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 0.4px;
+    letter-spacing: 2px;
+    -webkit-text-stroke-color: black;
+    color:whitesmoke;
+    text-shadow: 4px 3px 3px black;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.intro img{
+    width:30%;
+}
+.list{
+    height:80px;
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    list-style: none; 
+    top:0;
+    position: sticky;
+    background-color: black;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.list a:nth-child(odd){
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    background-color: blue;
+    padding:15px;
+    color: white;
+    border-radius: 10%;
+    position: sticky;
+    transition: 1s;
+}
+.list a:nth-child(even){
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    background-color: white;
+    padding:15px;
+    color: blue;
+    border-radius: 10%;
+    position: sticky;
+    transition: 1s;
+}
+.list a:hover{
+    color: gray;
+    background-color: yellow;
+    border-radius: 20%;
+}
+.list a:active{
+    color: red;
+    background-color: yellow;
+    transform: scale(0.9);
+    border-radius: 20%;
+}
+.test section{
+    height: 180vh;
+    width:100%;
+    display: inline-block;
+    overflow-x: hidden;
+    margin-bottom: 0%;
+    padding-bottom: 0;
+    
+    
+       
+}
+.test section h2{
+    text-align: center;
+    background-color: brown;
+    color:white;
+    text-transform:uppercase ;
+    font-weight: 700;
+    padding-bottom: 10px;
+    align-items: center;
+    margin: 0;
+    top:0;
+    text-shadow: 2px 3px 2px black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+.test section div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+
+
+nav{
+    margin: 0;
+    padding: 0;
+}
+
+.peek{
+    position: sticky;
+    top:0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+footer{
+    height: 50px;
+    width:100%;
+    justify-content: center;
+    background-color: black;
+    position: sticky;
+    bottom: 0;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+
+footer a{
+    text-decoration: none;
+    color:white;
+    transition: 1s;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+footer a:hover{
+    background-color: honeydew;
+    color: black;
+    text-decoration: none;
+}
+footer a:active{
+    color: tomato;
+    transform: scale(0.9);
+}
+
+ 
+#biology{
+    background-image: url('images/molecules-dna-4k-spiral-3d-art.jpg');
+    background-size: cover;
+    
+    margin-bottom: -6px;
+    padding: 0%;
+    background-attachment: fixed;
+}
+#computer{
+    background-image: url('images/gaming.jpg');
+    background-size: cover;
+    margin-bottom: -6px;
+    padding: 0%;
+    background-attachment: scroll;
+}
+#chemistry{
+    background-image: url('images/chem.jpg');
+    background-size: cover;
+    margin-bottom: -6px;
+    padding: 0%;
+    background-attachment: scroll;
+}
+#maths{
+    background-image: url('images/maths.jpg');
+    background-size: cover;
+    margin-bottom: -6px;
+    padding: 0%;
+    background-attachment: fixed;
+}
+#physics{
+    background-image: url('images/phy.jpg');
+    background-size: cover;
+    margin-bottom: -6px;
+    padding: 0%;
+    background-attachment: scroll;
+}
