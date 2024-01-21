@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shade.css">
+</head>
+<body class="video-container">
+    <div class="grey-overlay" style="opacity: 0.5"></div>
+    <div class="center slider">
+        Find Your Fellow
+        <br>
+        With Us
+        <div class="slide">
+            <div><div>This is our new Website!</div></div>
+            <div><div>Amazing Experience</div></div>
+            <div><div>Good News</div></div>
+        </div>
+    </div>
+    <br>
+    <button type="button" class="button" id="first">
+        Reveal 1
+    </button>
+    <button type="button" class="button" id="second">
+        Reveal 2
+    </button>
+    <button type="button" class="button" id="third">
+        Reveal 3
+    </button>
+        <video autoplay muted loop>
+          <source src="videos/video (2160p).mp4" type="video/mp4">
+        </video>
+    <script>
+        document.getElementById("first").addEventListener("click", function() {
+  window.location.href = "second.html";
+    });
+    document.getElementById("second").addEventListener("click", function() {
+  window.location.href = "first.html";
+});
+document.getElementById("third").addEventListener("click", function() {
+  window.location.href = "https://www.instagram.com/findyourfellow?igsh=MXZqMDRzNmR5azV6bQ==";
+});
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+            overflow: hidden;
+            background-color: rgb(0, 0, 0);
+            
+        }
+        .banner1,.banner2,.banner3,.banner4
+        {
+            
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+        }
+        img
+        {
+            /* filter: brightness(70%) contrast(80%) grayscale(0%); 
+            background-color: black; */
+            width: 110%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            animation: zoom-out 10s linear infinite;
+        
+        }
+        @keyframes zoom-out 
+        {
+            100%
+            {
+                width: 90%;
+            }    
+        }
+        .text-box
+        {
+            width: 600px;
+            position: absolute;
+            top:200px;
+            left:100px;
+            color:#fff;
+        }
+        .text-box h1
+        {
+            margin-bottom: 40px;
+        }
+        .text-box p
+        {
+            font-size: 14px;
+            line-height: 18px;
+            margin-top: 80px;
+        }
+        .text-box span
+        {
+            background: red;
+            height: 2px;
+            width: 150px;
+            position: absolute;
+            left: 0;
+        }
+        .banner1
+        {
+            animation: slide1 40s linear infinite;
+        }
+        .banner2
+        {
+            animation: slide2 40s linear infinite;
+        }
+        .banner3
+        {
+            animation: slide3 40s linear infinite;
+        }
+        .banner4
+        {
+            animation: slide4 40s linear infinite;
+        }
+        @keyframes slide1 
+        {
+            0%
+            {
+                visibility: visible;
+            }
+            25%
+            {
+                visibility: hidden;
+            }
+            50%
+            {
+                visibility: hidden;
+            }
+            75%
+            {
+                visibility: hidden;
+            }  
+            100%
+            {
+                visibility: visible;
+            }  
+        }
+        @keyframes slide2
+        {
+            0%
+            {
+                visibility: hidden;
+            }
+            25%
+            {
+                visibility: hidden;
+            }
+            50%
+            {
+                visibility: visible;
+            }
+            75%
+            {
+                visibility: hidden;
+            }  
+            100%
+            {
+                visibility: hidden;
+            }  
+        }
+        @keyframes slide3
+        {
+            0%
+            {
+                visibility: hidden;
+            }
+            25%
+            {
+                visibility: hidden;
+            }
+            50%
+            {
+                visibility: hidden;
+            }
+            75%
+            {
+                visibility: visible;
+            }  
+            100%
+            {
+                visibility: hidden;
+            }  
+        }
+        @keyframes slide4
+        {
+            0%
+            {
+                visibility: hidden;
+            }
+            25%
+            {
+                visibility: hidden;
+            }
+            50%
+            {
+                visibility: hidden;
+            }
+            75%
+            {
+                visibility: hidden;
+            }  
+            100%
+            {
+                visibility: visible;
+            }  
+        }
+    </style>
+</head>
+<body>
+    <div class="banner1">
+        <img src="images/main_logo_1.jpg" alt="" srcset="">
+        <div class="text-box">
+            <!-- <h1>Amazing Design</h1> -->
+            <!-- <span></span> -->
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sapiente facere odit a ipsum expedita quibusdam aspernatur delectus voluptas, nihil dicta blanditiis, inventore soluta sequi distinctio incidunt omnis eum veritatis!</p> -->
+        </div>
+    </div>
+    <div class="banner2">
+        <img src="images/logo_desc.jpg" alt="" srcset="">
+        <div class="text-box">
+            <!-- <h1>Cool Designs</h1> -->
+            <!-- <span></span> -->
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sapiente facere odit a ipsum expedita quibusdam aspernatur delectus voluptas, nihil dicta blanditiis, inventore soluta sequi distinctio incidunt omnis eum veritatis!</p> -->
+        </div>
+    </div>
+    <div class="banner3">
+        <img src="images/main_logo_1.jpg" alt="" srcset="">
+        <div class="text-box">
+            <!-- <h1>Nice Members</h1> -->
+            <!-- <span></span> -->
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sapiente facere odit a ipsum expedita quibusdam aspernatur delectus voluptas, nihil dicta blanditiis, inventore soluta sequi distinctio incidunt omnis eum veritatis!</p> -->
+        </div>
+    </div>
+    <div class="banner4">
+        <img src="images/logo_desc.jpg" alt="" srcset="">
+        <div class="text-box">
+            <!-- <h1>Superior Quality</h1> -->
+            <!-- <span></span> -->
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sapiente facere odit a ipsum expedita quibusdam aspernatur delectus voluptas, nihil dicta blanditiis, inventore soluta sequi distinctio incidunt omnis eum veritatis!</p> -->
+        </div>
+    </div>
+</body>
+</html>
